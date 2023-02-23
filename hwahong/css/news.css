@@ -1,0 +1,128 @@
+/* news style ===================================================== */
+.news-wrap {
+  margin-top: 120px;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+.news:not(:first-of-type) {
+  margin-top: 100px;
+}
+.news-img {
+  width: 50%;
+  /* height: 330px; */
+}
+.news-content {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+.text-wrap h4 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.text-wrap p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 2줄 이상 ...표시 */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1rem;
+  color: #B8B8B8;
+  margin: 40px 0 30px;
+}
+.text-wrap button {
+  width: 200px;
+  height: 40px;
+  font-size: 1.125rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+/* Exhibitions style ===================================================== */
+.exhibitions-wrap {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.exhibitions {
+  display: block;
+  width: 30%;
+}
+.exhibitions-wrap img {
+  width: 100%;
+  height: 52%;
+  margin-bottom: 40px;
+}
+.exhibitions-content .text-wrap{
+  width: 100%;
+  text-align: center;
+}
+.exhibitions-content .text-wrap p {
+  margin: 10px 0 30px;
+}
+.exhibitions-content .text-wrap button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* tablet ===================================================== */
+@media screen and (max-width:1260px) and (min-width: 769px) {
+  .news-wrap {
+    margin-top: 40px;
+  }
+  .news-content {
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .text-wrap h4 {
+    font-size: 1.25rem;
+  }
+  .text-wrap p {
+    font-size: 0.875rem;
+  }
+  .text-wrap button {
+    width: 208px;
+    height: 50px;
+  }
+}
+
+
+
+/* mobile ===================================================== */
+@media screen and (max-width:768px) {
+  .news {
+    display: block;
+  }
+  .news:not(:first-of-type) {
+    margin-top: 130px;
+  }
+  .news-wrap, .exhibitions-wrap {
+    margin-top: 40px;
+  }
+  .news-img {
+    width: 100%;
+  }
+  .news-content {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .text-wrap p {
+    margin: 40px 0 30px;
+  }
+  .text-wrap button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .exhibitions-wrap .exhibitions:last-child {
+    display: none;
+  }
+  .exhibitions {
+    display: block;
+    width: 48%;
+  }
+}

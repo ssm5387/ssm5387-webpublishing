@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'song myung';
+  src: url(/font/Song_Myung/SongMyung-Regular.ttf);
+}
+
+.title-wrap {padding-bottom: 40px;}
+.section-wrap:not(:first-child) {margin-top: 150px;}
+.brush-container {margin: 0 auto; padding: 0 167px;}
+.brush-container.flex {display: block;}
+.brush-item{
+  /* background-color: aquamarine; */
+  width: 100%;
+  max-width: 1178px;
+  margin-bottom: 80px;
+}
+.brush-item.flex {
+  justify-content:baseline;
+  align-items: top;
+}
+.brush-item .left {width: 50%;}
+.brush-item .right {width: 50%; padding: 30px 0 30px 40px;}
+
+.brush-item h2{ font-size: 2.25rem; font-family: 'song myung'; margin-bottom: 25px;}
+.brush-item ul { padding-left: 15px; list-style-position: outside;}
+.brush-item ul li {
+  font-size: 1.625rem;
+  list-style: disc;
+  color: #bbb;
+  padding-left: -5px;
+}
+/* 미디어쿼리 */
+@media screen and (max-width: 1260px){
+  .title-wrap {padding-bottom: 0;}
+  .brush-container {padding: 0;}
+  .brush-wrap {display: flex;justify-content: center;}
+  .brush-item { margin-bottom: 50px;}
+  .brush-item:first-child {padding-right: 21px;}
+  .brush-item:last-child {padding-left: 21px;}
+  .brush-wrap:last-child .brush-item {margin-bottom: 0;}
+  .brush-item.flex {display: block;}
+  .brush-item .left{ width: 100%;}
+  .brush-item .left img{width: 100%;}
+  .brush-item .right { width: 100%; padding: 30px 0 0; }
+  .brush-item h2 {font-size: 2.5rem; margin-bottom: 20px;}
+  .brush-item ul li {font-size: 1.625rem;}
+}
+
+@media screen and (max-width: 768px){
+  .brush-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .brush-item {padding: 0;}
+  .brush-item:first-child {padding-right: 0;}
+  .brush-item:last-child {padding-left: 0;}
+  .brush-wrap:last-child .brush-item {margin-bottom: 50px;}
+  .brush-item .left {width: 100%;}
+  .brush-item .left img{width: 100%;}
+  .brush-item h2{font-size: 1.5rem; margin-bottom: 15px;}
+  .brush-item ul li{font-size: 1.25rem;}
+}
+
+@media screen and (max-width:360px){
+  .container {padding: 80px 0 50px;}
+  .section-wrap{margin: 80px 0 80px;}
+  .section-wrap:not(:first-child) {margin-top: 70px;}
+  .brush-wrap:last-child .brush-item {margin-bottom: 50px;}
+  .brush-wrap:last-child .brush-item:last-child {margin-bottom: 0;}
+
+  .brush-item {padding-left: 0;}
+  .brush-item:last-child {padding-left: 0;}
+  .brush-item h2{font-size: 1.25rem; margin-bottom: 15px;}
+  .brush-item ul li{font-size: 1rem;}
+}

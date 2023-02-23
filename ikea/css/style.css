@@ -1,0 +1,64 @@
+.intro_page video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#desc-container,
+#desc-container2,
+#desc-container3,
+#desc-container4,
+#desc-container5{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  transform: translate(-50%,-50%);
+  width: 260px;
+  height: 180px;
+}
+.credit {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+/* 가이드 화면 */
+.guide{
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 99999;
+  /* display: none; */
+}
+.guide img{
+  width: 600px;
+}
+.guide .btn_g{
+  position: absolute;
+  top: 30px; right: 30px;
+  cursor: pointer;
+}
+.guide .btn_g img{
+  width: 30px;
+}
+
+.btn{
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  animation: btn 3s infinite;
+}
+.btn img{
+  width: 100px;
+}
+@keyframes btn{
+  0%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(10px);
+  }
+}

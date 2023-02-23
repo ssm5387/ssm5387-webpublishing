@@ -1,0 +1,108 @@
+@media screen and (max-width: 1480px){
+  .news{
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .news-right{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1240px){
+  /* header & banner */
+  .gnb>ul{
+    display: none;
+  }
+ 
+  .gnb>ul:hover{
+    display: block;
+  }
+
+  .banner .dim .dim-con{
+    text-align: center;
+  }
+
+  .menu_bg{
+    width: 25%;
+  }
+  /* 한진네트워크 */
+  .network-hd{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  .network-hd h2{
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .network-wrap .slick-list{
+    padding: 0 !important;
+  }
+
+  /* 한진뉴스 */
+  .news-left .tit-right{
+    display: flex;
+    position: relative;
+  }
+  .news-left .tit-right img{
+    position: absolute;
+    left: auto;
+    right: 0;
+  }
+  .news-right{
+    margin-top: 0px;
+  }
+  .news-right .right-info h3{
+    font-size: 1rem;
+    color:#221F82;
+  }
+  .news-right .right-info time{
+    font-size: 0.75rem;
+    color:#999;
+    margin: 10px 0;
+  }
+  .news-right .right-info p{
+    font-size: 0.875rem;
+    color:#666;
+    margin-bottom: 30px;
+    line-height: 1.75;
+  }
+
+  /* 인재채용 */
+  .info-box{
+    flex-wrap: wrap;
+  }
+  .info-box article{
+    width: 50%;
+  }
+
+  /* 사회공헌 */
+  .welfare .container{
+    padding: 0 40px;
+  }
+  .wf-hd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  .wf-box{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wf-box .wf-item{
+    width: calc(50% - 10px);
+    height: 350px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 50px;
+  }
+  .wf-box .wf-item a{
+    bottom: 60px;
+    left: 50px;
+  }
+  .wf-box .wf-item:nth-child(2n){
+    margin-right: 0;
+  }
+}

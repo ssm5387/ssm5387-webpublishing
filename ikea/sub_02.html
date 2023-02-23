@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA Bedroom</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/panolens.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+</head>
+
+<body>
+  
+  <!-- 고정 아이콘 -->
+  <div class="fixed">
+    <div class="logo">
+      <h1><a href="intro.html"><img src="img/logo.png" alt="" class="logo"></a></h1>
+    </div>
+    <!-- 안내문구 -->
+    <div class="credit">
+      <p>좌우로 돌려보면서 360도 체험을 진행해보세요.      
+      </p>
+    </div>
+    <div class="info">
+      <img src="img/info_s.png" alt="" class="info1">
+    </div>
+    <div class="all_product">
+      <div class="txt_all">view all items</div>
+      <img src="img/down_w_s.png" alt="">
+      <div class="product_list" data-mcs-theme="dark-3">
+        <ul style="height: 810px;">
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/ringsta-skaftet-table-lamp-white-nickel-plated-s29386558/" target="_blank">
+              <img src="img/be_item(1).png" alt="" class="list">
+              <div class="list">
+                <div>RINGSTA 링스타</div>
+                <p>탁상 스탠드</p>
+              </div>
+              <p class="list">29,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/gursken-bedside-table-light-beige-90503290/" target="_blank">
+              <img src="img/be_item(2).png" alt="" class="list">
+              <div class="list">
+                <div>GURSKEN 구르스켄</div>
+                <p>침대협탁</p>
+              </div>
+              <p class="list">29,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/eket-cabinet-white-30332121/" target="_blank">
+              <img src="img/be_item(3).png" alt="" class="list">
+              <div class="list">
+                <div>EKET 에케트</div>
+                <p>수납장</p>
+              </div>
+              <p class="list">25,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/gursken-chest-of-3-drawers-light-beige-60503296/" target="_blank">
+              <img src="img/be_item(4).png" alt="" class="list">
+              <div class="list">
+                <div>GURSKEN 구르스켄</div>
+                <p>3칸 서랍장</p>
+              </div>
+              <p class="list">59,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/ikornnes-standing-mirror-ash-10298397/" target="_blank">
+              <img src="img/be_item(5).png" alt="" class="list">
+              <div class="list">
+                <div>IKORNNES 이코르네스</div>
+                <p>전신거울</p>
+              </div>
+              <p class="list">169,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/malm-bed-frame-high-white-stained-oak-veneer-40325163/" target="_blank">
+              <img src="img/be_item(6).png" alt="" class="list">
+              <div class="list">
+                <div>MALM 말름</div>
+                <p>높은침대프레임</p>
+              </div>
+              <p class="list">284,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/gursken-wardrobe-light-beige-50503292/" target="_blank">
+              <img src="img/be_item(7).png" alt="" class="list">
+              <div class="list">
+                <div>GURSKEN 구르스켄</div>
+                <p>옷장</p>
+              </div>
+              <p class="list">99,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/nordkisa-open-wardrobe-with-sliding-door-bamboo-80439469/" target="_blank">
+              <img src="img/be_item(8).png" alt="" class="list">
+              <div class="list">
+                <div>NORDKISA 노르드키사</div>
+                <p>오픈형 옷장</p>
+              </div>
+              <p class="list">279,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/syvde-dressing-table-white-00439562/" target="_blank">
+              <img src="img/be_item(9).png" alt="" class="list">
+              <div class="list">
+                <div>SYVDE 쉬브데</div>
+                <p>화장대</p>
+              </div>
+              <p class="list">169,000</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="s_prev">
+    <a href="index.html">
+      <img src="img/back.png" alt="" >
+    </a>
+  </div>
+  
+  <!-- 인포메이션 -->
+  <div class="infomation">
+    <h2><img src="img/t_logo.png" alt=""></h2>
+    <ul>
+      <li>
+        <div>IKEA Family</div>
+        <p>지금 IKEA Family에 무료로 가입하고
+          다양한 멤버 전용 혜택을 누리세요.</p>
+        <button>자세히 보기</button>
+      </li>
+      <li>
+        <div>IKEA Business Network</div>
+        <p>여러분의 더 나은 비즈니스 환경을 위한
+          다양한 혜택들을 받으세요.</p>
+        <button>자세히 보기</button>
+      </li>
+    </ul>
+    <div class="address">
+      IKEA 코리아 <br>
+      주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점 <br>
+      사업자 등록번호 : 106-86-82871 <br>
+      대표자 : 프레드릭 요한손 <br>
+      통신판매업 신고 : 2018-경기광명-0209 <br>
+      TEL : 1670-4532
+    </div>
+    <div class="copyright">
+      © Inter IKEA Systems B.V 1999-2022
+    </div>
+    <div class="info_btn">
+      <img src="/img/close_w.png" alt="">
+    </div>
+  </div>
+  
+  <!-- 제품 소개 -->
+  <div id="info_box" class="txt_box">
+    <!-- item1 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container">
+        <div class="txt_wrap txt_wrap1">
+          <div><span> GURSKEN</span> <br> 구르스켄</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>3칸 서랍장</p>
+        <i>59,900</i>
+      </div>
+    </div>
+    <!-- item2 -->
+    <div class="txt_container"> 
+      <div class="product_wrap" id="desc-container2">
+        <div class="txt_wrap txt_wrap2">
+          <div><span>GURSKEN</span> <br> 구르스켄</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>옷장</p>
+        <i>99,900</i>
+      </div>
+    </div>
+    <!-- item3 -->
+    <div class="txt_container"> 
+      <div class="product_wrap" id="desc-container3">
+        <div class="txt_wrap txt_wrap3">
+          <div><span>RINGSTA</span> <br> 링스타</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>탁상스탠드</p>
+        <i>29,900</i>
+      </div>
+    </div>
+    <!-- item4 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container4">
+        <div class="txt_wrap txt_wrap4">
+          <div><span>MALM</span> <br> 말름</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>높은침대프레임</p>
+        <i>284,000</i>
+      </div>
+    </div>
+    <!-- item5 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container5">
+        <div class="txt_wrap txt_wrap5">
+          <div><span>EKET</span> <br> 에케트</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>수납장</p>
+        <i>25,000</i>
+      </div>
+    </div>
+    <!-- item6 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container6">
+        <div class="txt_wrap txt_wrap6">
+          <div><span>GURSKEN</span> <br> 구르스켄</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>침대협탁</p>
+        <i>29,900</i>
+      </div>
+    </div>
+    <!-- item7 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container7">
+        <div class="txt_wrap txt_wrap7">
+          <div><span>STOENSE</span> <br> 스토엔세</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>딘모러그</p>
+        <i>59,900</i>
+      </div>
+    </div>
+    <!-- item8 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container8">
+        <div class="txt_wrap txt_wrap8">
+          <div><span>SYVDE</span> <br> 쉬브데</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>화장대</p>
+        <i>169,000</i>
+      </div>
+    </div>
+    <!-- item9 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container9">
+        <div class="txt_wrap txt_wrap9">
+          <div><span>IKORNNES</span> <br> 이코르네스</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>전신거울</p>
+        <i>169,000</i>
+      </div>
+    </div>
+    <!-- item10 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container10">
+        <div class="txt_wrap txt_wrap10">
+          <div><span>NORDKISA</span> <br> 노르드키사</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>오픈형 옷장</p>
+        <i>279,000</i>
+      </div>
+    </div>
+  </div>
+  <!-- item box -->
+  <!-- item1 -->
+  <div class="item_box item_box2 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">GURSKEN 구르스켄</div>
+        <div class="text2">3칸 서랍장</div>
+        <div class="text3">59,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item" name="select" style="background-color: #cfccbd;">
+              <label for="item">라이트베이지</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards" name="mm">
+              <label for="standards">69cmX67cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/gursken-chest-of-3-drawers-light-beige-60503296/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item2 -->
+  <div class="item_box item_box3 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">GURSKEN 구르스켄</div>
+        <div class="text2">옷장</div>
+        <div class="text3">99,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item1" name="select" style="background-color: #cfccbd;">
+              <label for="item1">라이트베이지</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards1" name="mm">
+              <label for="standards1">49cmX55cmX186cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/gursken-wardrobe-light-beige-50503292/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item3 -->
+  <div class="item_box item_box4 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">RINGSTA 링스타</div>
+        <div class="text2">탁상스탠드 </div>
+        <div class="text3">29,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item2" name="select" style="background-color: #fff;">
+              <label for="item2">화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards2" name="mm">
+              <label for="standards2">41cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="text4"><img src="/img/info_1.png" alt=""> 전구는 별도 판매입니다. LED전구 GU10(3개) 사용을 권장합니다.</div>
+      <div class="btn" style="margin-top: 80px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/ringsta-skaftet-table-lamp-white-nickel-plated-s29386558/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item4 -->
+  <div class="item_box item_box5 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">MALM 말름</div>
+        <div class="text2">높은침대프레임 </div>
+        <div class="text3">284,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item3" name="select" style="background-color: #272725;">
+              <label for="item3">블랙브라운</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item4" name="select" style="background-color: #fff;">
+              <label for="item4">화이트</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item5" name="select" style="background-color: #d0bb94;">
+              <label for="item5">화이트스테인</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards3" name="mm">
+              <label for="standards3">120cmX200cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span ></span>
+      <div class="text4"><img src="/img/info_1.png" alt=""> 침대갈빗살과 매트리스, 침구는 별도구매입니다.</div>
+      <div class="btn" style="margin-top: 80px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/malm-bed-frame-high-white-stained-oak-veneer-40325163/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item5 -->
+  <div class="item_box item_box6 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">EKET 에케트</div>
+        <div class="text2">수납장</div>
+        <div class="text3">25,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item6" name="select" style="background-color: #505d62;">
+              <label for="item6">그레이터쿼이즈</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item7" name="select" style="background-color: #504c49;">
+              <label for="item7">다크그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item8" name="select" style="background-color: #95918d;">
+              <label for="item8">라이트그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item9" name="select" style="background-color: #535547;">
+              <label for="item9">라이트그린</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item10" name="select" style="background-color: #caa599;">
+              <label for="item10">페일핑크</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item11" name="select" style="background-color: #e3ded4;">
+              <label for="item11">화이트</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item12" name="select" style="background-color: #876b52;">
+              <label for="item12">화이트스테인</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards4" name="mm">
+              <label for="standards4">35cmX25cmX35cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 80px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/eket-cabinet-white-30332121/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item6 -->
+  <div class="item_box item_box7 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">GURSKEN 구르스켄</div>
+        <div class="text2">침대협탁</div>
+        <div class="text3">29,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item13" name="select" style="background-color: #a39984;">
+              <label for="item13">라이트베이지</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards5" name="mm">
+              <label for="standards5">39cmX30cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 120px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/gursken-bedside-table-light-beige-90503290/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item7 -->
+  <div class="item_box item_box8 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">STOENSE 스토엔세</div>
+        <div class="text2">딘모러그</div>
+        <div class="text3">59,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item14" name="select" style="background-color: #887c56;">
+              <label for="item14">라이트올리브그린</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item15" name="select" style="background-color: #959391;">
+              <label for="item15">미디엄그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item16" name="select" style="background-color: #ccb9a9;">
+              <label for="item16">오프화이트</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item17" name="select" style="background-color: #614659;">
+              <label for="item17">퍼플</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards6" name="mm">
+              <label for="standards6">130cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/stoense-rug-low-pile-off-white-80426805/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item8 -->
+  <div class="item_box item_box9 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">SYVDE 쉬브데</div>
+        <div class="text2">화장대</div>
+        <div class="text3">169,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item18" name="select" style="background-color: #fff;">
+              <label for="item18">화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards7" name="mm">
+              <label for="standards7">100cmX48cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/syvde-dressing-table-white-00439562/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+    </div>
+    <button class="x_button">
+      <img src="/img/close.png" alt="">
+    </button>
+    </div>
+  </div>
+  <!-- item9 -->
+  <div class="item_box item_box10 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">IKORNNES 이코르네스</div>
+        <div class="text2">전신거울</div>
+        <div class="text3">169,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item19" name="select" style="background-color: #a46f49;">
+              <label for="item19">물푸레나무</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards8" name="mm">
+              <label for="standards8">52cmX167cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/ikornnes-standing-mirror-ash-10298397/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item10 -->
+  <div class="item_box item_box11 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">NORDKISA 노르드키사</div>
+        <div class="text2">오픈형 옷장</div>
+        <div class="text3">279,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item20" name="select" style="background-color: #a46f49;">
+              <label for="item20">대나무</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards9" name="mm">
+              <label for="standards9">120cmX186cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/nordkisa-open-wardrobe-with-sliding-door-bamboo-80439469/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div id="desc-container11">
+    <a href="index.html">
+      <div class="exit"></div>
+    </a>
+  </div>
+
+  <script>
+    const panorama = new PANOLENS.ImagePanorama('img/bedroom.jpg');
+    const viewer = new PANOLENS.Viewer({
+      output: 'console'
+    });
+
+    //버튼
+    var infospot = new PANOLENS.Infospot(200, 'img/button(1).png' );
+    infospot.position.set(-2689.43, -1668.44, 5000.00);
+    infospot.addHoverElement(document.getElementById('desc-container'), 0);
+
+    //버튼2
+    infospot2 = new PANOLENS.Infospot(200, ' img/button(2).png ' );
+    infospot2.position.set(-5000.00, -636.81, -122.22);
+    infospot2.addHoverElement(document.getElementById('desc-container2'),0);
+
+    //버튼3
+    infospot3 = new PANOLENS.Infospot(200, 'img/button(3).png' );
+    infospot3.position.set(-5000.00, -486.41, -1372.48);
+    infospot3.addHoverElement(document.getElementById('desc-container3'),0);
+
+    //버튼4
+    infospot4 = new PANOLENS.Infospot(200, 'img/button(4).png' );
+    infospot4.position.set(-2577.39, -836.73, -5000.00);
+    infospot4.addHoverElement(document.getElementById('desc-container4'),0);
+    
+    //버튼5
+    infospot5 = new PANOLENS.Infospot(200, 'img/button(5).png' );
+    infospot5.position.set(-86.74, 1356.21, -5000.00);
+    infospot5.addHoverElement(document.getElementById('desc-container5'),0);
+
+    //버튼6
+    infospot6 = new PANOLENS.Infospot(200, 'img/button(6).png' );
+    infospot6.position.set(62.15, -1634.68, -5000.00);
+    infospot6.addHoverElement(document.getElementById('desc-container6'),0);
+
+    //버튼7
+    infospot7 = new PANOLENS.Infospot(200, 'img/button(7).png' );
+    infospot7.position.set(841.69, -4536.56, -5000.00);
+    infospot7.addHoverElement(document.getElementById('desc-container7'),0);
+
+    //버튼8
+    infospot8 = new PANOLENS.Infospot(200, 'img/button(8).png' );
+    infospot8.position.set(3125.93, -1444.65, -5000.00);
+    infospot8.addHoverElement(document.getElementById('desc-container8'),0);
+
+    //버튼9
+    infospot9 = new PANOLENS.Infospot(200, 'img/button(9).png' );
+    infospot9.position.set(5000.00, -704.55, -2988.17);
+    infospot9.addHoverElement(document.getElementById('desc-container9'),0);
+
+    //버튼10
+    infospot10 = new PANOLENS.Infospot(200, 'img/button(10).png' );
+    infospot10.position.set(5000.00, -311.01, -812.51);
+    infospot10.addHoverElement(document.getElementById('desc-container10'),0);
+
+    //버튼11
+    infospot11 = new PANOLENS.Infospot(600, 'img/arrow(11).png' );
+    infospot11.position.set(2526.01, -374.30, 5000.00);
+    infospot11.addHoverElement(document.getElementById('desc-container11'),0);
+
+    panorama.add(infospot);
+    panorama.add(infospot2);
+    panorama.add(infospot3);
+    panorama.add(infospot4);
+    panorama.add(infospot5);
+    panorama.add(infospot6);
+    panorama.add(infospot7);
+    panorama.add(infospot8);
+    panorama.add(infospot9);
+    panorama.add(infospot10);
+    panorama.add(infospot11);
+
+    viewer.add(panorama);
+  </script>
+
+</body>
+</html>

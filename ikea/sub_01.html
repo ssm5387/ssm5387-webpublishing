@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA Kitchen</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/panolens.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+</head>
+<body>
+  
+  <!-- 고정 아이콘 -->
+  <div class="fixed">
+    <div class="logo">
+      <h1><a href="./intro.html"><img src="img/logo.png" alt="" class="logo"></a></h1>
+    </div>
+    <div class="credit">
+      <!-- 안내문구 -->
+      <p>좌우로 돌려보면서 360도 체험을 진행해보세요.      
+      </p>
+    </div>
+    <!-- 모든 상품 -->
+    <div class="all_product">
+      <div class="txt_all">view all items</div>
+      <img src="img/down_w_s.png" alt="">
+      <div class="product_list" data-mcs-theme="dark-3">
+        <ul>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/virrmo-ceiling-track-3-spots-nickel-plated-20469096/" target="_blank">
+              <img src="img/ki_item(1).png" alt="" class="list">
+              <div class="list">
+                <div>VIRRMO 비르모</div>
+                <p>천장트랙조명 3등</p>
+              </div>
+              <p class="list">59,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/janinge-bar-stool-white-50246090/" target="_blank">
+              <img src="./img/ki_item(2).png" alt="" class="list">
+              <div class="list">
+                <div>JANINGE 야닝에</div>
+                <p>바스틀</p>
+              </div>
+              <p class="list">199,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/jaersta-door-high-gloss-light-turquoise-00469993/" target="_blank">
+              <img src="img/ki_item(3).png" alt="" class="list">
+              <div class="list">
+                <div>JARSTA 예르스타</div>
+                <p>도어</p>
+              </div>
+              <p class="list">40,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/moerbylanga-volfgang-table-and-4-chairs-brown-gunnared-medium-grey-s69259841/" target="_blank">
+              <img src="img/ki_item(4).png" alt="" class="list">
+              <div class="list">
+                <div>뫼르뷜룽아 / 볼프강</div>
+                <p>테이블 + 의자4</p>
+              </div>
+              <p class="list">1,198,600</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/jakobsbyn-jaellby-pendant-lamp-clear-glass-nickel-plated-s99388120/" target="_blank">
+              <img src="img/ki_item(5).png" alt="" class="list">
+              <div class="list">
+                <div>JAKOBSBYN 야콥스뷘</div>
+                <p>펜던트등</p>
+              </div>
+              <p class="list">49,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/ekbacken-worktop-limestone-effect-laminate-40548795/" target="_blank">
+              <img src="img/ki_item(6).png" alt="" class="list">
+              <div class="list">
+                <div>EKBACKEN 에크바켄</div>
+                <p>조리대</p>
+              </div>
+              <p class="list">100,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/ringhult-door-high-gloss-white-00274226/" target="_blank">
+              <img src="img/ki_item(7).png" alt="" class="list">
+              <div class="list">
+                <div>RINGHULT 링훌트</div>
+                <p>도어</p>
+              </div>
+              <p class="list">120,000</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="info">
+      <img src="img/info_s.png" alt="" class="info1">
+    </div>
+  </div>
+  <div class="s_prev">
+    <a href="index.html">
+      <img src="img/back.png" alt="" >
+    </a>
+  </div>
+    <!-- 인포메이션 -->
+  <div class="infomation">
+    <h2><img src="img/t_logo.png" alt=""></h2>
+    <ul>
+      <li>
+        <div>IKEA Family</div>
+        <p>지금 IKEA Family에 무료로 가입하고
+          다양한 멤버 전용 혜택을 누리세요.</p>
+        <button>자세히 보기</button>
+      </li>
+      <li>
+        <div>IKEA Business Network</div>
+        <p>여러분의 더 나은 비즈니스 환경을 위한
+          다양한 혜택들을 받으세요.</p>
+        <button>자세히 보기</button>
+      </li>
+    </ul>
+    <div class="address">
+      IKEA 코리아 <br>
+      주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점 <br>
+      사업자 등록번호 : 106-86-82871 <br>
+      대표자 : 프레드릭 요한손 <br>
+      통신판매업 신고 : 2018-경기광명-0209 <br>
+      TEL : 1670-4532
+    </div>
+    <div class="copyright">
+      © Inter IKEA Systems B.V 1999-2022
+    </div>
+    <div class="info_btn">
+      <img src="/img/close_w.png" alt="">
+    </div>
+  </div>
+
+  <!-- 제품 소개 -->
+  <div id="info_box" class="txt_box">
+    <!-- item1 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container">
+        <div class="txt_wrap txt_wrap1">
+          <div><span> BILLSBRO</span> <br> 빌스브로</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>손잡이</p>
+        <i>7,500</i>
+      </div>
+    </div>
+    <!-- item2 -->
+    <div class="txt_container"> 
+      <div class="product_wrap" id="desc-container2">
+        <div class="txt_wrap txt_wrap2">
+          <div><span>RINGHULT</span> <br> 링훌트</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>도어</p>
+        <i>120,000</i>
+      </div>
+    </div>
+    <!-- item3 -->
+    <div class="txt_container"> 
+      <div class="product_wrap" id="desc-container3">
+        <div class="txt_wrap txt_wrap3">
+          <div><span>VIRRMO</span> <br> 비르모</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>천장트랙조명3등</p>
+        <i>59,000</i>
+      </div>
+    </div>
+    <!-- item4 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container4">
+        <div class="txt_wrap txt_wrap4">
+          <div><span>JARSTA</span> <br> 예르스타</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>도어</p>
+        <i>40,000</i>
+      </div>
+    </div>
+    <!-- item5 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container5">
+        <div class="txt_wrap txt_wrap5">
+          <div><span>EKBACKEN</span> <br> 에크바켄</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>조리대</p>
+        <i>100,000</i>
+      </div>
+    </div>
+    <!-- item6 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container6">
+        <div class="txt_wrap txt_wrap6">
+          <div><span>JANINGE</span> <br> 야닝에</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>비스틀, 화이트, 76cm</p>
+        <i>199,000</i>
+      </div>
+    </div>
+    <!-- item7 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container7">
+        <div class="txt_wrap txt_wrap7">
+          <div><span>JAKOBSBYN</span> <br> 야콥스뷘</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>펜던트등</p>
+        <i>49,900</i>
+      </div>
+    </div>
+    <!-- item8 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container8">
+        <div class="txt_wrap txt_wrap8">
+          <div><span>MÖRBYLÅNGA</span> <br> 뫼르뷜롱아</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>테이블</p>
+        <i>1,198,600</i>
+      </div>
+    </div>
+    <!-- item9 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container9">
+        <div class="txt_wrap txt_wrap9">
+          <div><span>NYMANE</span> <br> 뉘모네</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>LED천장등</p>
+        <i>49,900</i>
+      </div>
+    </div>
+    <!-- item10 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container10">
+        <div class="txt_wrap txt_wrap10">
+          <div><span>VOLFGANG</span> <br> 볼프강</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>의자4</p>
+        <i>1,198,600</i>
+      </div>
+    </div>
+  </div>
+  <!-- item box -->
+  <!-- item1 -->
+  <div class="item_box item_box2 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">BILLSBRO 빌스브로</div>
+        <div class="text2">손잡이</div>
+        <div class="text3">7,500</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item" name="select" style="background-color: #8c8c8c;">
+              <label for="item">스테인리스스틸</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item2" name="select" style="background-color: #fff">
+              <label for="item2">화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards" name="mm">
+              <label for="standards">120mm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards2" name="mm">
+              <label for="standards2">1880mm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards3" name="mm">
+              <label for="standards3">320mm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards4" name="mm">
+              <label for="standards4">40mm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards5" name="mm">
+              <label for="standards5">520mm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards6" name="mm">
+              <label for="standards6">720mm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 70px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/billsbro-handle-white-70334302/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item2 -->
+  <div class="item_box item_box3 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">RINGHULT 링훌트</div>
+        <div class="text2">도어</div>
+        <div class="text3">120,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item3" name="select" style="background-color: #c8c8c8;">
+              <label for="item3">하이글로스 라이트그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item4" name="select" style="background-color: #fff">
+              <label for="item4">하이글로스 화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards7" name="mm">
+              <label for="standards7">20cmX80cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards8" name="mm">
+              <label for="standards8">30cmX80cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards9" name="mm">
+              <label for="standards9">30cmX60cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards10" name="mm">
+              <label for="standards10">40cmX40cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards11" name="mm">
+              <label for="standards11">40cmX60cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards12" name="mm">
+              <label for="standards12">40cmX80cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards13" name="mm">
+              <label for="standards13">40cmX140cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards14" name="mm">
+              <label for="standards14">40cmX200cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards15" name="mm">
+              <label for="standards15">60cmX40cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards16" name="mm">
+              <label for="standards16">60cmX60cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards17" name="mm">
+              <label for="standards17">60cmX80cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards18" name="mm">
+              <label for="standards18">60cmX140cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards19" name="mm">
+              <label for="standards19">60cmX200cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 40px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/ringhult-door-high-gloss-white-00274226/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item3 -->
+  <div class="item_box item_box4 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">VIRRMO 비르모</div>
+        <div class="text2">천장트랙조명3등</div>
+        <div class="text3" >59,900</div>
+      </div>
+      <span></span>
+      <div class="text4"><img src="/img/info_1.png" alt=""> 전구는 별도 판매입니다. LED전구 GU10(3개) 사용을 권장합니다.</div>
+      <div class="btn">
+        <button><a href="https://www.ikea.com/kr/ko/p/virrmo-ceiling-track-3-spots-nickel-plated-20469096/">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item4 -->
+  <div class="item_box item_box5 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">JÄRSTA 예르스타</div>
+        <div class="text2">도어</div>
+        <div class="text3">40,000</div>
+        
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards20" name="mm">
+              <label for="standards20">40cmX40cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards21" name="mm">
+              <label for="standards21">40cmX60cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards22" name="mm">
+              <label for="standards22">40cmX80cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards23" name="mm">
+              <label for="standards23">60cmX60cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards24" name="mm">
+              <label for="standards24">60cmX80cm</label>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <span ></span>
+      <div class="btn" style="margin-top: 240px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/jaersta-door-high-gloss-light-turquoise-00469993/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item5 -->
+  <div class="item_box item_box6 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">EKBACKEN 에크바켄</div>
+        <div class="text2">양면 조리대</div>
+        <div class="text3">100,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item5" name="select" style="background-color: #696866;">
+              <label for="item5">다크그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item6" name="select" style="background-color: #d8d8d6">
+              <label for="item6">라이트그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item7" name="select" style="background-color: #514136">
+              <label for="item7">브라운 호두나무</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item8" name="select" style="background-color: #b4b4ad">
+              <label for="item8">라임스톤</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item9" name="select" style="background-color: #e0ddd3">
+              <label for="item9">무광 베이지</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item10" name="select" style="background-color: #484848">
+              <label for="item10">무광 앤트러싸이트</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item11" name="select" style="background-color: #e4cda6">
+              <label for="item11">물푸레나무</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item12" name="select" style="background-color: #6c6b67">
+              <label for="item12">콘크리트 효과</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards25" name="mm">
+              <label for="standards25">186cmX2.8cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards26" name="mm">
+              <label for="standards26">246cmX2.8cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 60px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/ekbacken-worktop-limestone-effect-laminate-40548795/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item6 -->
+  <div class="item_box item_box7 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">JANINGE 야닝에</div>
+        <div class="text2">바스툴</div>
+        <div class="text3">199,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item13" name="select" style="background-color: #c6c6c6;">
+              <label for="item13">그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item14" name="select" style="background-color: #fff">
+              <label for="item14">화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards27" name="mm">
+              <label for="standards27">76cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 100px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/janinge-bar-stool-white-50246090/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item7 -->
+  <div class="item_box item_box8 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">JAKOBSBYN 야콥스뷘</div>
+        <div class="text2">펜던트등</div>
+        <div class="text3">49,900</div>
+      </div>
+      <span></span>
+      <div class="text4"><img src="./img/info_1.png" alt=""> 전구는 별도구매 입니다.</div>
+      <div class="btn">
+        <button><a href="https://www.ikea.com/kr/ko/p/jakobsbyn-jaellby-pendant-lamp-clear-glass-nickel-plated-s99388120/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="./img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item8 -->
+  <div class="item_box item_box9 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">MÖRBYLÅNGA 뫼르뷜롱아</div>
+        <div class="text2">테이블</div>
+        <div class="text3">1,198,600</div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards28" name="mm">
+              <label for="standards28">140cmX85cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 260px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/moerbylanga-volfgang-table-and-4-chairs-brown-bomstad-black-s19251828/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="./img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item9 -->
+  <div class="item_box item_box10 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">NYMÅNE 뉘모네</div>
+        <div class="text2">LED천장등</div>
+        <div class="text3">49,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item15" name="select" style="background-color: #fff">
+              <label for="item15">화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 190px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/nymane-led-ceiling-lamp-white-10359772/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item10 -->
+  <div class="item_box item_box11 " style="display: none;">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">VOLFGANG 볼프강</div>
+        <div class="text2">의자4</div>
+        <div class="text3">1,198,600</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item16" name="select" style="background-color: #5e5f64;">
+              <label for="item16">군나레드 미디엄그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item17" name="select" style="background-color: #302b25">
+              <label for="item17">봄스타드 블랙</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards29" name="mm">
+              <label for="standards29">140cmX85cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 70px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/moerbylanga-volfgang-table-and-4-chairs-brown-bomstad-black-s19251828/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div id="desc-container11">
+    <a href="index.html">
+      <div class="exit"></div>
+    </a>
+  </div>
+
+  <script>
+    const panorama = new PANOLENS.ImagePanorama('img/kitchen.jpg');
+    const viewer = new PANOLENS.Viewer({
+      output: 'console'
+    });
+
+    //버튼
+    var infospot = new PANOLENS.Infospot(200, 'img/button(1).png' );
+    infospot.position.set(-1716.20, 576.22, -5000.00);
+    infospot.addHoverElement(document.getElementById('desc-container'), 0);
+
+    //버튼2
+    infospot2 = new PANOLENS.Infospot(200, ' img/button(2).png ' );
+    infospot2.position.set(-140.16, 121.47, -5000.00);
+    infospot2.addHoverElement(document.getElementById('desc-container2'),0);
+
+    //버튼3
+    infospot3 = new PANOLENS.Infospot(200, 'img/button(3).png' );
+    infospot3.position.set(2669.96, 2127.42, -5000.00);
+    infospot3.addHoverElement(document.getElementById('desc-container3'),0);
+
+    //버튼4
+    infospot4 = new PANOLENS.Infospot(200, 'img/button(4).png' );
+    infospot4.position.set(3654.59, 1200.72, -5000.00);
+    infospot4.addHoverElement(document.getElementById('desc-container4'),0);
+    
+    //버튼5
+    infospot5 = new PANOLENS.Infospot(200, 'img/button(5).png' );
+    infospot5.position.set(1678.82, -707.04, -5000.00);
+    infospot5.addHoverElement(document.getElementById('desc-container5'),0);
+
+    //버튼6
+    infospot6 = new PANOLENS.Infospot(200, 'img/button(6).png' );
+    infospot6.position.set(1228.11, -2591.09, -5000.00);
+    infospot6.addHoverElement(document.getElementById('desc-container6'),0);
+
+    //버튼7
+    infospot7 = new PANOLENS.Infospot(200, 'img/button(7).png' );
+    infospot7.position.set(5000.00, 1934.21, 4582.62);
+    infospot7.addHoverElement(document.getElementById('desc-container7'),0);
+
+    //버튼8
+    infospot8 = new PANOLENS.Infospot(200, 'img/button(8).png' );
+    infospot8.position.set(2817.53, -1190.35, 5000.00);
+    infospot8.addHoverElement(document.getElementById('desc-container8'),0);
+
+    //버튼9
+    infospot9 = new PANOLENS.Infospot(200, 'img/button(9).png' );
+    infospot9.position.set(-2526.11, 3698.06, 5000.00);
+    infospot9.addHoverElement(document.getElementById('desc-container9'),0);
+
+    //버튼10
+    infospot10 = new PANOLENS.Infospot(200, 'img/button(10).png' );
+    infospot10.position.set(2669.96, 2127.42, -5000.00);
+    infospot10.addHoverElement(document.getElementById('desc-container3'),0);
+
+    //버튼11
+    infospot11 = new PANOLENS.Infospot(200, 'img/button(11).png' );
+    infospot11.position.set(3306.70, -2609.22, 5000.00);
+    infospot11.addHoverElement(document.getElementById('desc-container10'),0);
+
+    //버튼12
+    infospot12 = new PANOLENS.Infospot(600, 'img/arrow(11).png' );
+    infospot12.position.set(-2847.02, -70.68, 5000.00);
+    infospot12.addHoverElement(document.getElementById('desc-container11'),0);
+    
+    
+    panorama.add(infospot);
+    panorama.add(infospot2);
+    panorama.add(infospot3);
+    panorama.add(infospot4);
+    panorama.add(infospot5);
+    panorama.add(infospot6);
+    panorama.add(infospot7);
+    panorama.add(infospot8);
+    panorama.add(infospot9);
+    panorama.add(infospot10);
+    panorama.add(infospot11);
+    panorama.add(infospot12);
+    
+    viewer.add(panorama);
+  </script>
+
+</body>
+</html>

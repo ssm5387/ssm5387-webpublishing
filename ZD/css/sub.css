@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Suisseintl';
+    src: url('../font/SuisseIntl-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.gnb-semi button{
+    position: absolute; bottom: 15px; right: 15px;
+    width: 190px; height: 52px;
+    border-radius: 25px; border: none;
+    background-color: #333;
+    color: #fff; text-align: center; font-size: 1rem; font-weight: 500; font-family:'Noto Sans KR', sans-serif;
+    z-index: 99; cursor: pointer;
+    transition: all 0.5s;
+}
+.gnb-semi button:hover{
+    background-color: #666;
+}
+/* banner */
+.banner{
+    width: 100%;
+    height: 690px;
+    background: url(../img/sub-banner01.png) no-repeat;
+    position: relative;
+}
+.banner .ban-con{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 340px;
+    display: flex;
+    align-items: end;
+    font-family: 'Suissenintl';
+    color: #fff;
+}
+.banner .ban-con h2{
+    font-size: 3.25rem;
+}
+.banner .ban-con p{
+    font-size: 1rem;
+    transform: translateY(-6px);
+}
+
+
+
+/* texture */
+.texture{
+    position: relative;
+}
+.texture-box{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.texture-gnb{
+    width: 230px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 1px rgba(0,0,0,0.15);
+    padding: 50px 0;
+    text-align: center;
+    color: rgba(51,51,51,1);
+    border-radius: 10px;
+}
+.texture-gnb h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+.texture-gnb ul li{
+    font-size: 1rem;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.texture-gnb ul li.active{
+    font-size: 1.125rem;
+    opacity: 1;
+    font-weight: 500;
+    color: #000;
+}
+
+.texture-content{
+    display: none;
+}
+.texture-content.active{
+    display: block;
+}
+
+.texture-content .texture-flex{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 100px;
+    color: #333;
+}
+.texture-content .texture-item{
+    margin: 0 30px;
+}
+.texture-flex .texture-item img{
+    width: 500px;
+    height: 400px;
+}
+.texture-flex .texture-item h2{
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+.texture-flex .texture-item p{
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+.phar{
+    width: 500px;
+    margin: 50px 0;
+    position: absolute;
+    right:0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1440px){
+    .texture-content .texture-flex{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .texture-content .texture-flex .texture-item{ margin-bottom: 50px; }
+    .texture-flex .texture-item img{ max-width: 500px; max-height: 400px; }
+    .phar{ width: 300px; margin: 20px 0; }
+}
+@media screen and (max-width: 760px){
+    .texture-gnb h2{ font-size: 1.5rem; }
+    .texture-gnb ul li{ font-size: 1rem; }    
+    .texture-gnb ul li.active{ font-size: 1.25rem;}
+    .texture-flex .texture-item img{ width: 300px; height: 240px; }
+    .texture-flex .texture-item h2{ font-size: 1rem; }
+    .texture-flex .texture-item p{ font-size: 1rem; }
+    .phar{ width: 250px; margin: 20px 0; }
+}
+
+/* ad */
+.container{
+    max-width: 1460px;
+    margin: 0 auto;
+}
+.ad{
+   padding: 80px 0;
+}
+.ad h2{
+    font-size: 2rem;
+    font-family: 'Suissenintl';
+    margin: 70px 0 36px 0;
+}
+.ad img{
+    border-top: 2px solid #ccc;
+    border-bottom: 1px solid #ddd;
+}
+.ad .min-img{
+    display: none;
+}
+/* 인풋 */
+.flex{ display: flex; justify-content: space-around;}
+.remodel .table{
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 100px 0 80px;
+    /* box-shadow: 0 0 2px #ADADAD */
+}
+.remodel .th{
+    width: 25%;
+    height: 48px;
+    vertical-align: top;
+    padding-top: 5px;
+}
+.remodel .td{
+    width: 65%;
+}
+.remodel #main-address button{
+    width: 160px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid rgba(112,112,112,0.5);
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(112,112,112,0.5);
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.5s;
+}
+.remodel #main-address button:hover{
+    color: rgba(112,112,112);
+}
+.remodel .td select{
+    width: 100px;
+    height: 48px;
+    padding: 0 14px;
+    font-size: 0.875rem;
+    color: #707070;
+}
+.remodel #num .td select
+{margin-right: 10px; border: 1px solid rgba(112,112,112,0.5);}
+.remodel #num .td input{     
+    width: 100%;
+    max-width: 550px;
+}
+.remodel .td input{
+    width: 100%;
+    max-width: 610px;
+    height: 48px;
+    font-size: 0.875rem;
+    color: #707070;
+    padding: 0 14px;
+    margin-bottom: 14px;
+    border: 1px solid rgba(112,112,112,0.5);
+}
+textarea{
+    width: 100%;
+    max-width: 610px;
+    height: 170px;
+    padding: 5px;
+    font-size: 0.875rem;
+    color: #c9c9c9;
+    resize: none; 
+    border: 1px solid rgba(112,112,112,0.5);
+}
+
+.submit{
+    padding: 60px 0 120px; 
+    border-top: 1px solid #adadad;
+    text-align: center;
+}
+.submit input{
+    height: 48px;
+    padding: 0 30px;
+    font-size: 1rem;
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.submit input:hover{
+    color: #ccc;
+}
+
+@media screen and (max-width: 767px){
+    .remodel .table{ padding: 20px 0; }
+    .remodel .td input{font-size: 0.75rem; }
+    .ad .max-img{display: none;}
+    .ad .min-img{display: block;}
+    .remodel #main-address button{
+        width: 160px;
+        height: 48px;
+        font-size: 0.875rem;
+    }
+}

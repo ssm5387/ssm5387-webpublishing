@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href='./img/fav-hanjin.png'>
+  <link rel="stylesheet" href="./css/style_sub.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bd3b3fd1dc.js" crossorigin="anonymous"></script>
+  <script src="./js/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/script-sub.js"></script>
+  <title>한진칼-재무정보</title>
+</head>
+<body>
+  <header>
+    <div class="head-wrap">
+      <div class="gnb_bg"></div>
+      <h1><a href="./index.html"><img src='./img/hanjin-logo-basic.png' alt=""></a></h1>
+      <nav class="gnb">
+        <ul>
+          <li class="hover">
+            <a href="#">기업정보</a>
+            <ul class="gnb_bar">
+              <li><a href="#">회사개요</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">CI</a></li>
+            </ul>
+          </li>
+          
+          <li class="hover">
+            <a href="#">사업영역</a>
+            <ul class="gnb_bar">
+              <li><a href="#"><li>항공부문</a></li>
+              <li><a href="#"><li>육운부문</a></li>
+              <li><a href="#"><li>관광호텔</a></li>
+              <li><a href="#"><li>정보서비스</a></li>
+              <li><a href="#"><li>비영리법인</a></li>
+            </ul>
+          </li>
+          
+          <li class="hover">
+            <a href="#">투자정보</a>
+            <ul class="gnb_bar">
+              <li><a href="#">재무정보</a></li>
+              <li><a href="#">주식정보</a></li>
+            </ul>
+          </li>
+
+          <li class="hover">
+            <a href="#">인재채용</a>
+            <ul class="gnb_bar">
+              <li><a href="#"><li>인재상</a></li>
+              <li><a href="#"><li>채용안내</a></li>
+            </ul>
+          </li>
+
+          <li class="hover">
+            <a href="#">홍보센터</a>
+            <ul class="gnb_bar">
+              <li><a href="#"><li>회사소식</a></li>
+              <li><a href="#"><li>한진미디어</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+      <div class="menu_bg">
+        <button><img src='./img/close.png'></button>
+        <ul>
+          <li><a href="#">기업정보</a></li>
+          <li><a href="#">사업영역</a></li>
+          <li><a href="#">투자정보</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li><a href="#">홍보센터</a></li>
+        </ul>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href='#'><img src='./img/icon_lang.png' alt=""></a></li>
+          <li><div class="gnb_btn"></div></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div>
+      <img src='./img/_bg.jpg' alt=''>
+    </div>
+    <div class="dim">
+      <div class="dim-con">
+        <h2>재무정보</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="select">
+      <div class="select-wrap">
+
+        <div class="select-home">
+          <i class="fa-solid fa-house"></i>
+        </div>
+
+        <div class="select-item">
+          <select name="투자정보">
+            <optgroup>
+              <option>투자정보</option>
+              <option>사업영역</option>
+              <option>기업정보</option>
+              <option>인재채용</option>
+              <option>홍보센터</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="select-item">
+          <select name="재무정보">
+            <optgroup>
+              <option>재무정보</option>
+              <option>주식정보</option>
+            </optgroup>
+          </select>
+        </div>
+
+      </div>
+  </div>
+
+  <section class="graph">
+    <div class="container">
+      <h2>재무정보</h2>
+        <!-- <button>손익계산서</button>
+        <button>재무상태표</button> -->
+      <div>
+        <p>단위 억원</p>
+        <canvas id="myChart" width="73vw" height="33vh"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="class">
+    <div class="container">
+      <h2>신용등급</h2>
+      <div class="class-inner">
+        <div><img src="./img/BBB.png"></div>
+        <table>
+          <tbody>
+            <tr>
+              <td>평가기관(국내)</td>
+              <td>2021년 9월 기준</td>
+            </tr>
+            <tr>
+              <td>한국기업평가<br>
+              한국신용평가</td>
+              <td>BBB(양호)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>2021</th>
+            <th>2020</th>
+            <th>2019</th>
+            <th>2018</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>매출액</td>
+            <td>3,953</td>
+            <td>4,088</td>
+            <td>12,035</td>
+            <td>13,049</td>
+          </tr>
+  
+          <tr>
+            <td>매출원가</td>
+            <td>4,996</td>
+            <td>5,389</td>
+            <td>10,689</td>
+            <td>10,463</td>
+          </tr>
+          
+          <tr>
+            <td>매출총이익</td>
+            <td>-1,013</td>
+            <td>-1,301</td>
+            <td>1,346</td>
+            <td>2,586</td>
+          </tr>
+  
+          <tr>
+            <td>판매관리비</td>
+            <td>939</td>
+            <td>910</td>
+            <td>1,385</td>
+            <td>1,498</td>
+          </tr>
+  
+          <tr>
+            <td>영업이익</td>
+            <td>1,952</td>
+            <td>2,211</td>
+            <td>6,800</td>
+            <td>8,200</td>
+          </tr>
+  
+          <tr>
+            <td>영업외손익</td>
+            <td>496</td>
+            <td>1,129</td>
+            <td>2,596</td>
+            <td>1,007</td>
+          </tr>
+  
+          <tr>
+            <td>법인세차감전순이익</td>
+            <td>1,456</td>
+            <td>3,340</td>
+            <td>2,635</td>
+            <td>81</td>
+          </tr>
+  
+          <tr>
+            <td>당기순이익</td>
+            <td>2,357</td>
+            <td>3,415</td>
+            <td>8,000</td>
+            <td>128</td>
+          </tr>
+  
+          <tr>
+            <td>영업이익률(%)</td>
+            <td>-49.4%</td>
+            <td>-54.1%</td>
+            <td>-0.3%</td>
+            <td>8.3%</td>
+          </tr>
+  
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+    <footer>
+    <div class="ft-wrap">
+      <div class="ft-left">
+        <img src="./img/hanjin-logo-black.png" alt="">
+        <ul class="left-con1">
+          <li>법적고지</li>
+          <li>이메일주소무단수집거부</li>
+          <li>사이트맵</li>
+        </ul>
+        <ul class="left-con2">
+          <li>서울특별시 중구 서소문로 117</li>
+          <li>Tel. 02-726-6166</li>
+        </ul>
+        <div class="left-con3">
+          <p>COPYRIGHT HANJIN KAL. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="ft-right">
+        <select>
+          <option>계열사 바로가기</option>
+          <optgroup label="항공부문">
+            <option>대한항공</option>
+            <option>진에어</option>
+            <option>한국공항</option>
+            <option>에어코리아</option>
+          </optgroup>
+          <optgroup label="육운부문">
+            <option>(주)한진</option>
+          </optgroup>
+          <optgroup label="관광/호텔/부동산 부문">
+            <option>한진관광</option>
+            <option>칼호텔 네트워크</option>
+            <option>항공종합서비스</option>
+            <option>정석기업</option>
+          </optgroup>
+          <optgroup label="정보서비스 부문">
+            <option>한진정보통신</option>
+            <option>토파스 여행정보</option>
+            <option>사이버 스카이</option>
+            <option>한국글로벌로지텍스시스템</option>
+          </optgroup>
+          <optgroup label="비영리법인 부문">
+            <option>한국공항대학교</option>
+            <option>인하대 병원</option>
+            <option>일우재단</option>
+            <option>인하대학교</option>
+            <option>인하공업전문대학교</option>
+          </optgroup>
+          <optgroup label="해외법인 부문">
+            <option>와이키키 리조트 호텔</option>
+          </optgroup>
+          <div class="select-arrow"></div>
+        </select>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

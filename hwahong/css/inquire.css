@@ -1,0 +1,159 @@
+.form-wrap{
+  font-size: 1.125rem;
+  padding: 0 70px;
+}
+.form-wrap label,
+.form-wrap input,
+.form-wrap span{vertical-align: middle;}
+.form-box.flex{flex-wrap: wrap;}
+.tr{
+  width: 100%;
+  padding: 40px 0 20px;
+  border-bottom: 1px solid #575757;
+}
+.tr.half{
+  width: calc( 50% - 20px );
+  border-bottom: 1px solid #575757;
+  margin-right: 20px;
+}
+#info.tr{ border-bottom: none; }
+
+.th{width: 11%; min-width: 80px; margin-right: 5px;}
+.td{width: 89%; max-width: 1150px; }
+.half.flex{justify-content: flex-start;}
+.half input{
+  width: 80%;
+  max-width: 520px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 1.125rem;
+  color: #fff;
+  border: none;
+  /* border: 1px solid #000; */
+  padding-left: 5px;
+}
+.half.flex{justify-content: flex-start;}
+.file-box{ width: 100%;}
+.file-box.flex{ justify-content: flex-start; }
+.file-box .upload-name {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  height: 40x;
+  padding: 0 10px;
+  vertical-align: middle;
+  background-color: transparent;
+  border: none;
+  font-size: 1.125rem;
+  color: #fff;
+}
+.file-box label {
+  display: block;
+  width: 180px;
+  height: 40px;
+  padding: 0 20px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  background-color: #000;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.file-box input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+#content textarea{border: none;}
+textarea {
+  width: 100%;
+  height: 350px;
+  padding: 35px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid #575757;
+  color: #fff;
+  font-size: 1.125rem;
+  resize: none; 
+}
+#info textarea {color: #8a8a8a; margin-bottom: 30px;}
+#info input{margin-right: 10px;}
+input[type="checkbox"]{
+  border: max(2px, 0.1em) solid #D1D1D1;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  appearance: none;
+}
+input[type="checkbox"]:checked {
+  border: none;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  appearance: none;
+  transition: all 0.7s ease-in-out;
+}
+
+.submit {max-width: 100%; margin: 0 auto; padding: 40px 0;}
+.submit .tr{
+  border: none;
+}
+.submit .btn-sub{
+  width: 250px;
+  height: 65px;
+  background-color: #F0EDCC;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 1.125rem;
+  color: #333;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1260px) and (min-width: 769px) {
+  .form-wrap{ padding: 0 50px;}
+  .th{width: 130px;}
+  .half input{max-width: 438px; font-size: 1rem;}
+  .file-box .upload-name { width: 70%;}
+  .file-box .upload-name {
+    max-width: 800px;
+    height: 40px;
+    padding: 0 10px;
+  }
+  .file-box label {
+    width: 150px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 1rem;
+  }
+  textarea{ width: 100%; height: 400px; font-size:1.125rem; padding: 20px}
+  input[type="checkbox"]{width: 1rem; height: 1rem;}
+  input[type="checkbox"]:checked {width: 1rem; height: 1rem;}
+}
+
+@media screen and (max-width:768px) {
+  .sub-title h3{ font-weight: 1.75rem; }
+  .form-wrap{ font-size: 1rem; padding: 0 15px;}
+  .half input{max-width: 238px; font-size: 0.875rem;}
+  .tr.half{ width: 100%;}
+  .file-box .upload-name { height: 30px; font-size: 0.875rem; }
+  .file-box label {width: 100px; font-size: 0.875rem; height: 30px; padding:0; line-height: 30px;}
+  textarea{font-size: 1rem; padding: 10px}
+  input[type="checkbox"]{width: 0.875rem; height: 0.875rem;}
+  input[type="checkbox"]:checked { width: 0.875rem; height: 0.875rem; }
+  .submit { padding: 50px 0 0;}
+  .submit .btn-sub{
+    width: 180px;
+    height: 45px;
+    font-size: 1rem;
+    color: #333;
+  }
+}
+@media screen and (max-width:360px) {
+  textarea{height: 5  00px; font-size: 1rem; padding: 0;}
+}

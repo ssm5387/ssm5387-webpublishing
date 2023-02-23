@@ -1,0 +1,62 @@
+@media screen and (max-width: 980px){
+  .menu_bg{
+    width: 25%;
+  }
+
+  .news-right{
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  .news-right .right-info{
+    text-align: center;
+  }
+  .news-right .right-info h3{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  /* banner */
+  .banner .dim .dim-con h2{
+    font-size: 4rem;
+  }
+  .banner .dim .dim-con p{
+    font-size: 2rem;
+  }
+  
+  /* 인재채용 */
+  .info-box article{
+    width: 100%;
+  }
+
+  /* 사회공헌 */
+  .wf-box{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wf-box .wf-item{
+    width: calc(100% - 10px);
+    height: 350px;
+    padding: 50px;
+    margin: 10px 0;
+  }
+
+  /* footer */
+  .ft-wrap{
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .ft-left{
+    text-align: center;
+  }
+  .ft-right{
+    padding-top: 0;
+  }
+}

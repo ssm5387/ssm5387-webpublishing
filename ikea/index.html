@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA Showroom</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+<style>
+    html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+</style>
+<body>
+  <!-- 고정 아이콘 -->
+  <div class="fixed">
+    <div class="logo">
+      <h1><a href="./intro.html"><img src="./img/logo.png" alt="" class="logo"></a></h1>
+    </div>
+    <div class="credit">
+      <!-- 안내문구 -->
+      <p>좌우로 돌려보면서 360도 체험을 진행해보세요.      
+      </p>
+    </div>
+    <div class="info">
+      <img src="./img/info.png" alt="" class="info1">
+    </div>
+  </div>
+
+  <!-- 인포메이션 -->
+  <div class="infomation">
+    <h2><img src="./img/t_logo.png" alt=""></h2>
+    <ul>
+      <li>
+        <div>IKEA Family</div>
+        <p>지금 IKEA Family에 무료로 가입하고
+          다양한 멤버 전용 혜택을 누리세요.</p>
+        <button>자세히 보기</button>
+      </li>
+      <li>
+        <div>IKEA Business Network</div>
+        <p>여러분의 더 나은 비즈니스 환경을 위한
+          다양한 혜택들을 받으세요.</p>
+        <button>자세히 보기</button>
+      </li>
+    </ul>
+    <div class="address">
+      IKEA 코리아 <br>
+      주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점 <br>
+      사업자 등록번호 : 106-86-82871 <br>
+      대표자 : 프레드릭 요한손 <br>
+      통신판매업 신고 : 2018-경기광명-0209 <br>
+      TEL : 1670-4532
+    </div>
+    <div class="copyright">
+      © Inter IKEA Systems B.V 1999-2022
+    </div>
+    <div class="info_btn">
+      <img src="./img/close_w.png" alt="">
+    </div>
+  </div>
+
+  
+  <!-- 가이드 화면 -->
+  <div class="guide">
+    <img src="./img/guide(1).png" alt="">
+    <div class="btn_g">
+      <img src="./img/close.png" alt="">
+    </div>
+  </div>
+  <div id="container">
+    <a href="https://sungmin-portfolio.netlify.app/ikea/sub_03.html" id="desc-container" style="display:none"></a>
+    <a href="https://sungmin-portfolio.netlify.app/ikea/sub_04.html" id="desc-container2" style="display:none"></a>
+    <a href="https://sungmin-portfolio.netlify.app/ikea/sub_05.html" id="desc-container3" style="display:none"></a>
+    <a href="https://sungmin-portfolio.netlify.app/ikea/sub_02.html" id="desc-container4" style="display:none"></a>
+    <a href="https://sungmin-portfolio.netlify.app/ikea/sub_01.html" id="desc-container5" style="display:none"></a>
+  </div>
+
+  <script src="./js/three.min.js"></script>
+  <script src="./js/panolens.min.js"></script>
+
+  <script>
+      var panorama, viewer, container, infospot;
+    container = document.querySelector( '#container' );
+    panorama = new PANOLENS.ImagePanorama( 'img/lobby.jpg' );
+    
+    viewer = new PANOLENS.Viewer( { container: container, output: 'console' });
+    viewer.add( panorama );
+    
+    // Camera Controls
+    
+    // How far you can orbit vertically, upper and lower limits.Range is 0 to Math.PI radians.
+    viewer.OrbitControls.minPolarAngle = Math.PI / 3;
+    viewer.OrbitControls.maxPolarAngle = Math.PI * 2 / 3;
+    
+    // How far you can orbit horizontally, upper and lower limits. If set, must be a sub-interval of the interval [ - Math.PI, Math.PI ]. dd
+    viewer.OrbitControls.minAzimuthAngle = - Math.PI / 3;
+    viewer.OrbitControls.maxAzimuthAngle = Math.PI / 3;
+    
+    // Momentum 
+    viewer.OrbitControls.momentumDampingFactor = 0.75;
+    viewer.OrbitControls.momentumScalingFactor = -0.01;
+    viewer.OrbitControls.momentumKeydownFactor = 10;
+    
+    // Fov
+    viewer.OrbitControls.minFov = 50;
+    viewer.OrbitControls.maxFov = 160;
+    
+    // Zoom
+    viewer.OrbitControls.noZoom = true;
+
+     //버튼
+    infospot = new PANOLENS.Infospot(500, './img/arrow(6).png' );
+    infospot.position.set(-5000.00, -284.58, -2510.70);
+    infospot.addHoverElement(document.getElementById('desc-container'), 0);
+
+    //버튼2
+    infospot2 = new PANOLENS.Infospot(500, './img/arrow(7).png' );
+    infospot2.position.set(-2995.12, -107.72, -5000.00);
+    infospot2.addHoverElement(document.getElementById('desc-container2'), 0);
+
+    //버튼3
+    infospot3 = new PANOLENS.Infospot(500, './img/arrow(8).png' );
+    infospot3.position.set(96.43, -884.13, -4995.38);
+    infospot3.addHoverElement(document.getElementById('desc-container3'), 0);
+
+    //버튼4
+    infospot4 = new PANOLENS.Infospot(500, './img/arrow(9).png' );
+    infospot4.position.set(3168.35, -106.80, -4948.50);
+    infospot4.addHoverElement(document.getElementById('desc-container4'), 0);
+    
+    //버튼5
+    infospot5 = new PANOLENS.Infospot(500, './img/arrow(10).png' );
+    infospot5.position.set(5000.00, -274.07, -2289.08);
+    infospot5.addHoverElement(document.getElementById('desc-container5'), 0);
+
+    panorama.add(infospot);
+    panorama.add(infospot2);
+    panorama.add(infospot3);
+    panorama.add(infospot4);
+    panorama.add(infospot5);
+
+    viewer.add(panorama);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="3; url=portfolio.html">
+  <script src="./assets/js/jquery-3.3.1.min.js"></script>
+  <title>신성민's Portfolio</title>
+  <style>
+    @font-face {
+        font-family: 'intro-font';
+        src: url('./assets/webfonts/soup-Bold.ttf') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    ul, li{ list-style: none;}
+    a{color: inherit;}
+    img, video{vertical-align: top; max-width: 100%;}
+    .bg{width: 100%; height: 100vh; background: #000;
+    }
+    .content{ width: 800px; height: 600px; padding: 150px 0; margin: 0 auto; }
+    .progressbar {
+      width:100%;
+      height:20px;
+      background:#fff;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      animation: progress 3s ease-in-out;
+      animation-fill-mode:forwards;
+    }
+    @keyframes progress{
+      0% { width: 0; } 
+      100% { width: 100%; }  
+    }
+    #counter{ font-size: 2rem;  font-family: 'intro-font'; color: #fff; text-align: center;}
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <div class="content">
+      <video autoplay loop muted>
+        <source src="./assets/mp4/loading.mp4" type="video/mp4">
+      </video>
+      <div class="progressbar"></div>
+      <p id="counter"></p>
+    </div>
+  </div>
+
+
+  <script>
+    $(function(){
+      let countSpace = document.getElementById('counter');
+
+      let countNum = 0;
+
+      setInterval(() => {
+        if(countNum < 100){
+          countNum = countNum + 1;
+          countSpace.innerText = countNum + ' %';
+        }
+      }, 30);
+    });
+  </script>
+</body>
+</html>

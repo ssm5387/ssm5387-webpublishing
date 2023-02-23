@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA Library</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/panolens.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+</head>
+
+<body>
+  <!-- 고정 아이콘 -->
+  <div class="fixed">
+    <div class="logo">
+      <h1><a href="intro.html"><img src="img/logo.png" alt="" class="logo"></a></h1>
+    </div>
+    <!-- 안내문구 -->
+    <div class="credit">
+      <p>좌우로 돌려보면서 360도 체험을 진행해보세요.      
+      </p>
+    </div>
+    <div class="info">
+      <img src="img/info_s.png" alt="" class="info1">
+    </div>
+    <div class="all_product">
+      <div class="txt_all">View all items</div>
+      <img src="img/down_w_s.png" alt="">
+      <div class="product_list" data-mcs-theme="dark-3">
+        <ul style="height: 540px;">
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/lisabo-chair-ash-80457236/" target="_blank">
+              <img src="img/li_item(3).png" alt="" class="list">
+              <div class="list">
+                <div>LISABO 리사보</div>
+                <p>의자</p>
+              </div>
+              <p class="list">89,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/lisabo-desk-ash-veneer-10361746/" target="_blank">
+              <img src="img/li_item(4).png" alt="" class="list">
+              <div class="list">
+                <div>LISABO 리사보</div>
+                <p>책상</p>
+              </div>
+              <p class="list">199,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/dejsa-pendant-lamp-chrome-plated-opal-white-glass-80455586/" target="_blank">
+              <img src="img/li_item(6).png" alt="" class="list">
+              <div class="list">
+                <div>DEJSA 데이사</div>
+                <p>펜던트등</p>
+              </div>
+              <p class="list">79,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/lisabo-table-black-80416496/" target="_blank">
+              <img src="img/li_item(7).png" alt="" class="list">
+              <div class="list">
+                <div>LISABO 리사보</div>
+                <p>테이블</p>
+              </div>
+              <p class="list">249,000</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/bjoerkasen-laptop-stand-beige-10476479/" target="_blank">
+              <img src="img/li_item(8).png" alt="" class="list">
+              <div class="list">
+                <div>BJÖRKÅSEN 비에르코센</div>
+                <p>노트북스탠드</p>
+              </div>
+              <p class="list">34,900</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ikea.com/kr/ko/p/soederhamn-4-seat-sofa-with-chaise-longue-viarp-beige-brown-s79305828/" target="_blank">
+              <img src="img/li_item(9).png" alt="" class="list">
+              <div class="list">
+                <div>SÖDERHAMN 쇠데르함</div>
+                <p>4인용 쇼파</p>
+              </div>
+              <p class="list">1,610,000</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="s_prev">
+    <a href="index.html">
+      <img src="img/back.png" alt="" >
+    </a>
+  </div>
+  <!-- 인포메이션 -->
+  <div class="infomation">
+    <h2><img src="img/t_logo.png" alt=""></h2>
+    <ul>
+      <li>
+        <div>IKEA Family</div>
+        <p>지금 IKEA Family에 무료로 가입하고
+          다양한 멤버 전용 혜택을 누리세요.</p>
+        <button>자세히 보기</button>
+      </li>
+      <li>
+        <div>IKEA Business Network</div>
+        <p>여러분의 더 나은 비즈니스 환경을 위한
+          다양한 혜택들을 받으세요.</p>
+        <button>자세히 보기</button>
+      </li>
+    </ul>
+    <div class="address">
+      IKEA 코리아 <br>
+      주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점 <br>
+      사업자 등록번호 : 106-86-82871 <br>
+      대표자 : 프레드릭 요한손 <br>
+      통신판매업 신고 : 2018-경기광명-0209 <br>
+      TEL : 1670-4532
+    </div>
+    <div class="copyright">
+      © Inter IKEA Systems B.V 1999-2022
+    </div>
+    <div class="info_btn">
+      <img src="/img/close_w.png" alt="">
+    </div>
+  </div>
+  <!-- 제품 소개 -->
+  <div id="info_box" class="txt_box">
+    <!-- item1 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container">
+        <div class="txt_wrap txt_wrap1">
+          <div><span>LISABO</span> <br> 리사보</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>테이블</p>
+        <i>249,000</i>
+      </div>
+    </div>
+    <!-- item2 -->
+    <div class="txt_container"> 
+      <div class="product_wrap" id="desc-container2">
+        <div class="txt_wrap txt_wrap2">
+          <div><span>DEJSA</span> <br> 데이사</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>펜던트등</p>
+        <i>79,900</i>
+      </div>
+    </div>
+    <!-- item3 -->
+    <div class="txt_container"> 
+      <div class="product_wrap" id="desc-container3">
+        <div class="txt_wrap txt_wrap3">
+          <div><span>LISABO</span> <br> 리사보</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>의자</p>
+        <i>89,900</i>
+      </div>
+    </div>
+    <!-- item4 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container4">
+        <div class="txt_wrap txt_wrap4">
+          <div><span>LISABO</span> <br> 리사보</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>책상</p>
+        <i>199,000</i>
+      </div>
+    </div>
+    <!-- item5 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container5">
+        <div class="txt_wrap txt_wrap5">
+          <div><span>SÖDERHAMN</span> <br> 쇠데르함</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>4인용소파</p>
+        <i>1,610,000</i>
+      </div>
+    </div>
+    <!-- item6 -->
+    <div class="txt_container">
+      <div class="product_wrap" id="desc-container6">
+        <div class="txt_wrap txt_wrap6">
+          <div><span>BJÖRKÅSEN</span> <br> 비에르코센</div>
+          <img src="/img/next.png" alt="">
+        </div>
+        <p>노트북스탠드</p>
+        <i>34,900</i>
+      </div>
+    </div>
+  </div>
+  <!-- item box -->
+  <!-- item1 -->
+  <div class="item_box item_box2">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">LISABO 리사보</div>
+        <div class="text2">테이블</div>
+        <div class="text3">249,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1" style="overflow-x: auto;">
+            <div class="input_box">
+              <input type="radio" id="item" name="select" style="background-color: #f9e5d3;">
+              <label for="item">물푸레무늬목</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item1" name="select" style="background-color: #4e4e4a">
+              <label for="item1">블랙</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards1" name="mm">
+              <label for="standards1">105cm</label>
+            </div>
+            <div class="standard_wrap">
+              <input type="radio" id="standards2" name="mm">
+              <label for="standards2">140cmX78cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 80px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/lisabo-table-black-80416496/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item2 -->
+  <div class="item_box item_box3">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">DEJSA 데이사</div>
+        <div class="text2">펜던트등</div>
+        <div class="text3">79,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1" style="overflow-x: auto;">
+            <div class="input_box">
+              <input type="radio" id="item2" name="select" style="background-color: #fff;">
+              <label for="item2">오팔 화이트</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards3" name="mm">
+              <label for="standards3">36cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="text4"><img src="/img/info_1.png" alt=""> 조명은 별도구매입니다. LED전구 E26 구형 오팔 화이트 사용을 권장합니다.</div>
+      <div class="btn" style="margin-top: 60px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/dejsa-pendant-lamp-chrome-plated-opal-white-glass-80455586/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item3 -->
+  <div class="item_box item_box4">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">LISABO 리사보</div>
+        <div class="text2">의자</div>
+        <div class="text3">89,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1" style="overflow-x: auto;">
+            <div class="input_box">
+              <input type="radio" id="item3" name="select" style="background-color: #f9e5d3;">
+              <label for="item3">물푸레무늬목</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item4" name="select" style="background-color: #4e4e4a">
+              <label for="item4">블랙</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards4" name="mm">
+              <label for="standards4">44cmX80cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 80px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/lisabo-chair-black-10457230/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item4 -->
+  <div class="item_box item_box5">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">LISABO 리사보</div>
+        <div class="text2">책상</div>
+        <div class="text3">199,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1" style="overflow-x: auto;">
+            <div class="input_box">
+              <input type="radio" id="item5" name="select" style="background-color: #f9e5d3;">
+              <label for="item5">물푸레무늬목</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards5" name="mm">
+              <label for="standards5">118cmX74cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 80px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/lisabo-desk-ash-veneer-10361746/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item5 -->
+  <div class="item_box item_box6">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">SÖDERHAMN 쇠데르함</div>
+        <div class="text2">4인용소파</div>
+        <div class="text3">1,610,000</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1">
+            <div class="input_box">
+              <input type="radio" id="item6" name="select" style="background-color: #c1c0b8;">
+              <label for="item6">브라운</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item7" name="select" style="background-color: #808080">
+              <label for="item7">그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item8" name="select" style="background-color: #424242">
+              <label for="item8">다크그레이</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item9" name="select" style="background-color: #cac2ba">
+              <label for="item9">라이트베이지</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards6" name="mm">
+              <label for="standards6">291cmX151cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 60px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/soederhamn-4-seat-sofa-with-chaise-longue-viarp-beige-brown-s79305828/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <!-- item6 -->
+  <div class="item_box item_box7">
+    <div class="item_container">
+      <div class="box1">
+        <div class="text1">BJÖRKÅSEN 비에르코센</div>
+        <div class="text2">노트북스탠드</div>
+        <div class="text3">34,900</div>
+      </div>
+      <span></span>
+      <div class="box2">
+        <h4>색상선택</h4>
+        <div class="box_wrap">
+          <div class="item item1" style="overflow-x: auto;">
+            <div class="input_box">
+              <input type="radio" id="item10" name="select" style="background-color: #cfccc4;">
+              <label for="item10">베이지</label>
+            </div>
+            <div class="input_box">
+              <input type="radio" id="item11" name="select" style="background-color: #768686">
+              <label for="item11">터쿼이즈</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="box3">
+        규격선택
+        <div class="box_wrap" style="overflow-x: auto;">
+          <div class="standard_container">
+            <div class="standard_wrap">
+              <input type="radio" id="standards7" name="mm">
+              <label for="standards7">46cmX35cm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span></span>
+      <div class="btn" style="margin-top: 70px;">
+        <button><a href="https://www.ikea.com/kr/ko/p/bjoerkasen-laptop-stand-beige-10476479/" target="_blank">구매하기</a></button>
+        <button><a href="https://www.ikea.com/kr/ko/shoppingcart/" target="_blank">장바구니</a></button>
+      </div>
+      <button class="x_button">
+        <img src="/img/close.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div id="desc-container11">
+    <a href="index.html">
+      <div class="exit"></div>
+    </a>
+  </div>
+
+  <script>
+    const panorama = new PANOLENS.ImagePanorama('img/library.jpg');
+    const viewer = new PANOLENS.Viewer({
+      output: 'console'
+    });
+
+    //버튼
+    var infospot = new PANOLENS.Infospot(200, 'img/button(1).png' );
+    infospot.position.set(2595.25, -1920.68, -5000.00);
+    infospot.addHoverElement(document.getElementById('desc-container'),0);
+
+    //버튼2
+    infospot2 = new PANOLENS.Infospot(200, ' img/button(2).png ' );
+    infospot2.position.set(-2729.87, 3443.54, -5000.00);
+    infospot2.addHoverElement(document.getElementById('desc-container2'),0);
+
+    //버튼3
+    infospot3 = new PANOLENS.Infospot(200, 'img/button(3).png' );
+    infospot3.position.set(5000.00, -4691.47, -3723.60);
+    infospot3.addHoverElement(document.getElementById('desc-container3'),0);
+
+    //버튼4
+    infospot4 = new PANOLENS.Infospot(200, 'img/button(4).png' );
+    infospot4.position.set(5000.00, -916.75, -4704.53);
+    infospot4.addHoverElement(document.getElementById('desc-container4'),0);
+    
+    //버튼5
+    infospot5 = new PANOLENS.Infospot(200, 'img/button(5).png' );
+    infospot5.position.set(5000.00, -1257.41, -286.13);
+    infospot5.addHoverElement(document.getElementById('desc-container5'),0);
+
+    //버튼6
+    infospot6 = new PANOLENS.Infospot(200, 'img/button(6).png' );
+    infospot6.position.set(5000.00, -1874.97, 1555.19);
+    infospot6.addHoverElement(document.getElementById('desc-container6'),0);
+
+    //버튼7
+    infospot7 = new PANOLENS.Infospot(600, 'img/arrow(11).png' );
+    infospot7.position.set(-5000.00, -517.94, 2231.86);
+    infospot7.addHoverElement(document.getElementById('desc-container11'),0);
+
+    panorama.add(infospot);
+    panorama.add(infospot2);
+    panorama.add(infospot3);
+    panorama.add(infospot4);
+    panorama.add(infospot5);
+    panorama.add(infospot6);
+    panorama.add(infospot7);
+
+    viewer.add(panorama);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face{
+  font-family: 'xeicon';
+  src: url('/hanjin/font/xeicon.ttf');
+}
+/* common */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  vertical-align: top;
+  max-width: 100%;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:  1rem;
+  color: #212121;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+html, body{
+  height: 100%;
+}
+
+
+/* banner */
+.banner{
+  width: 100%;
+  height: 100%;
+  min-height: 980px;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.banner .dim{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.banner img{
+  width: 100%;
+  height: 100%;
+  min-height: 980px;
+}
+
+.banner .dim .dim-con{
+  max-width: 1480px;
+  color: #fff;
+  margin: 270px auto 0;
+}
+.banner .dim .dim-con h2{
+  font-size: 4.25rem;
+  margin-bottom: 20px;
+}
+.banner .dim .dim-con p{
+  font-size: 2.25rem;
+}
+
+/* header */
+header{
+  width: 100%;  
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .head-wrap{
+  max-width: 1480px;
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 20px;
+  font-size: 1.125rem;
+} 
+.head-wrap .menu li:first-child{
+  margin-right: 40px;
+}
+.head-wrap .menu img{
+  width: 30px;
+  height: 30px;
+}
+.menu .gnb_btn{
+  width: 29px;
+  height: 29px;;
+  background-image: url(../img/icon_hamburger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.on .menu .gnb_btn{
+  width: 29px;
+  height: 29px;;
+  background-image: url(../img/icon_hamburger_click.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.gnb>ul{
+  display: flex;
+  color: #fff;
+  text-align: center;
+}
+.gnb>ul .hover{
+  width: 100px;
+  position: relative;
+  margin: 0 30px;
+}
+.gnb>ul>li a:hover{
+  color: #2AA7D4;
+}
+.gnb_bg{
+  position: absolute;
+  left:0; 
+  top:0; 
+  width:100%; 
+  height:280px; 
+  background-color:#000;
+  display: none;
+  z-index: -1;
+}
+.gnb_bar{
+  text-align: center;
+  display: none;
+}
+.gnb_bar li{
+  margin: 15px 0;
+}
+
+.gnb_bar li:last-child{
+  margin-bottom: 0;
+}
+
+.menu_bg{
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  background-color: #221F82;
+  color: #fff;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+}
+.menu_bg button{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+}
+.menu_bg ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.menu_bg ul li{
+  margin-bottom: 40px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+/* section */
+section{
+  width: 100%;
+  margin: 200px 0;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* 한진네트워크 */
+
+/* 한진네트워크 header */
+.network-hd{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.network-hd h2{
+  font-size: 2.5rem;
+  color: #221F82;
+  margin-right: 40px;
+}
+.network-hd p{
+  font-size: 1.25rem;
+  color: #999999;
+}
+
+/* 한진네트워크 slide-btn */
+.network-wrap button{
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  position: absolute;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+}
+.network-wrap button:before{
+  font-family: 'xeicon';
+  color: #221F82;
+  font-size: 40px;
+}
+.network-wrap .prevArrow{
+  left: 0;
+  right: auto;
+  font-size: 0;
+  color: transparent;
+}
+.network-wrap .nextArrow{
+  left: auto;
+  right: 0;
+  font-size: 0;
+  color: transparent;
+}
+.network-wrap .prevArrow:before{
+  content: "\e906";
+}
+.network-wrap .nextArrow:before{
+  content: "\e907";
+}
+
+
+/* 한진네트워크 body */
+.network-wrap{
+  width: 100%;
+  position: relative; /* slide-btn을 위한 position */
+  /*border: 1px solid #000;*/
+}
+.network-wrap .network-con{
+  margin: 0 40px;
+  /*border: 1px solid #000;*/
+}
+
+.network-wrap .network-con .network-item{
+  /*max-width: 460px;*/
+  object-fit: cover;
+  /* 요소의 가로나 세로크기에 가능한 맞춰져 
+     크기가 조정되고, 비율은 고정 */
+  position: relative;
+  padding: 0 15px;
+}
+.network-wrap .network-con .network-item .network-info{
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #fff;
+}
+.network-wrap .network-con .network-info h3{
+  font-size: 2.25rem;
+}
+.network-wrap .network-con .network-info p{
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* 한진뉴스 */
+.news{
+  display: flex;
+  justify-content: space-between;
+}
+.news-left h2{
+  font-size: 2.5rem;
+  color: #221F82;
+  margin-bottom: 20px;
+}
+
+.news-left p{
+  font-size: 1.25rem;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.news-right{
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #221F82;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 40px 40px;
+}
+.news-right img{
+  max-width: 420px;
+  width: 100%;
+}
+
+.news-right .right-info{
+  padding: 0 68px;
+}
+
+.news-right .right-info h3{
+  font-size: 1.25rem;
+  color:#221F82;
+}
+.news-right .right-info time{
+  font-size: 0.75rem;
+  color:#999;
+  margin: 10px 0;
+}
+.news-right .right-info p{
+  font-size: 1rem;
+  color:#666;
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
+
+.news-right button{
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #1A00CC;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* info */
+.info-box{
+  display: flex;
+}
+.info-box article{
+  width: 25%;
+  color: #fff;
+  position: relative;
+  transition: 0.2s ease-out;
+  overflow: hidden;
+}
+.info-box article .info-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,93,255,0.5);
+}
+.info-box article img{
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+.info-box article:hover img{
+  transform:scale(1.2);
+}
+
+
+
+.info-box article h3{
+  font-size: 1.625rem;
+}
+.info-box article p{
+  font-size: 1.125rem;
+}
+
+.info-box article .info-bg .info-content{
+  width: 100%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* translate로 중심점을 잡고 옮겨버림 */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-box article .info-content h3{
+  margin-bottom: 20px;
+}
+
+/* welfare */
+.wf-hd{
+  margin-bottom: 50px;
+}
+.wf-hd h2{
+  font-size: 2.5rem;
+  color: #221F82;
+  margin-bottom: 20px;
+}
+.wf-hd p{
+  font-size: 1.25rem;
+  color: #999999;
+}
+.wf-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wf-box .wf-item{
+  width: calc( 25% - 20px);
+  height: 350px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  color: #fff;
+  padding: 45px 0 0 30px;
+}
+
+.wf-box .wf-item h3{
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.wf-box .wf-item p{
+  font-size: 1.125rem;
+  line-height: 1.66;
+}
+.wf-box .wf-item a{
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+}
+
+.wf-box .wf-item img{
+  transform: translate(15px, 8px);
+}
+
+.wf-box .color1{
+  background-color: #7FCAE5;
+}
+.wf-box .color1 a{
+  margin-top: 100px;
+}
+.wf-box .color2{
+  background-color: #65C0E0;
+}
+.wf-box .color3{
+  background-color: #48B3DA;
+}
+.wf-box .color4{
+  background-color: #2AA7D4;
+}
+
+/* footer */
+.ft-wrap{
+  max-width: 1440px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ft-left{
+  padding: 24px 0 23px 0;
+}
+
+.left-con1, .left-con2, .left-con3{
+  display: flex;
+}
+.left-con2, .left-con3{
+  margin-top: 10px;
+}
+.ft-left .left-con1{
+  margin-top: 30px;
+}
+.left-con1 li, .left-con2 li, .left-con3 li{
+  margin-right: 10px;
+}
+.left-con1 li:last-child, .left-con2 li:last-child, .left-con3 li:last-child{
+  margin-right: 0;
+}
+
+.ft-left .left-con3 p{
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.ft-right{
+  padding-top: 30px;
+}
+
+.ft-right select{
+  font-size: 1rem;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid #000;
+  appearance: none;
+  background: url(../img/select_btn.png);
+  background-repeat: no-repeat;
+  background-position: 0 -5px;
+}
+
+@media screen and (max-width: 1240px){
+  
+}

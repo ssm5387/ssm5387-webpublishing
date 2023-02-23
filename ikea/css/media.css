@@ -1,0 +1,60 @@
+@media (max-width:1024px){
+  .intro_page video{
+  }
+}
+@media (max-width:390px){
+  .fixed{
+    padding: 20px 20px;
+  }
+  .fixed .logo img{
+    width: 50px;
+    height: 30px;
+  }
+  .fixed .credit p{
+    font-size: 12px;
+  }
+  .fixed .info img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .guide img{
+    width: 250px;
+  }
+  .guide .btn_g img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  .s_prev img{
+    width: 40px;
+    height: 40px;
+  }
+  .infomation{
+    width: 300px;
+    height: 300px;
+  }
+  .infomation h2 img{
+    width: 230px;
+    height: 40px;
+  }
+  .infomation ul{
+    display: none;
+  }
+  .infomation .address{
+    font-size: 10px;
+  }
+  .infomation .copyright{
+    font-size: 12px;
+  }
+  .infomation .info_btn{
+    position: absolute;
+    top: 15px; right: 15px;
+  }
+  .infomation .info_btn img{
+    width: 20px;
+    height: 20px;
+  }
+}

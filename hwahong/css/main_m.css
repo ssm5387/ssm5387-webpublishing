@@ -1,0 +1,249 @@
+@media screen and (max-width:1560px) {
+  /* gnb */
+  #gnb .depth{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:1260px) {
+  .container{
+    width: 92% !important;
+  }
+
+  /* gnb */
+  #gnb .depth ul li{
+    font-size: 1rem;
+  }
+
+  /* 메인비주얼 */
+  .main-vs h2{
+    top: 35%;
+    font-size: 8.75rem;
+  }
+
+  /* 섹션1 */
+  .sec01{
+    flex-direction: column;
+  }
+  .sec01 article{
+    width: 30%;
+    margin-bottom: 80px;
+  }
+  .sec_side p{
+    font-size: 2.25rem;
+  }
+  .sec01 .sec01_parallax{
+    width: 100%;
+  }
+  .sec01_parallax .list_txt h3, .sec02 .sec02_con h3{
+    font-size: 1.5rem;
+  }
+  .sec01_parallax .list_txt p, .sec02 .sec02_con p{
+    font-size: 1.25rem;
+  }
+
+  .sec02{
+    margin: 0 auto 12% 0;
+    padding-top: 0;
+  }
+
+  /* 섹션3 */
+  .sec03 .sec03_txt h2{
+    font-size: 2.25rem;
+  }
+  .sec03 .sec03_txt p{
+    font-size: 1.5rem;
+  }
+
+  /* 섹션4 */
+  .sec04_con{
+    height: 70%;
+  }
+  .sec04 .sec04_con_txt h3{
+    font-size: 1.5rem;
+  }
+  .sec04 .sec04_con_txt p{
+    font-size: 1.25rem;
+  }
+
+}
+
+@media screen and (max-width:974px) {
+  #gnb{
+    height: 60px;
+  }
+  #gnb .depth , #gnb .search{
+    display: none;
+  }
+  #gnb .hbg-gnb{
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px){
+  #gnb{
+    height: 50px;
+  }
+  #gnb h1{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+  #gnb h1 a{
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  #gnb img{
+    width: 50px;
+  }
+  .container{
+    width: 96% !important;
+  }
+
+  .main-vs h2{
+    font-size: 5rem;
+    top: 40%;
+  }
+
+
+
+  .sec_side p{
+    font-size: 1.875rem;
+  }
+
+ .sec01 img{
+  max-height: 50%;
+  object-fit: cover;
+ }
+ .sec01 .list_txt{
+  height: inherit;
+  position: static;
+ }
+ .sec01 article{
+  width: 100%;
+  margin-bottom: 60px;
+}
+.sec01_parallax div{
+  height: inherit;
+}
+.sec01_parallax .list_wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: static !important;
+}
+.sec01_parallax .list_wrap .list01{
+  width: 100%;
+ position: static;
+}
+.sec01_parallax .list_wrap .list02{
+  width: 100%;
+  position: static;
+}
+.sec01_parallax .list_wrap .list03{
+  width: 100%;
+  position: static;
+}
+.sec01_parallax .list_txt h3{
+  font-size: 1.25rem;
+}
+.sec01_parallax .list_txt p{
+  font-size: 1rem;
+}
+.sec01_parallax .list_wrap > div{
+  margin-bottom: 60px;
+}
+
+/* section02 */
+.sec02{
+  padding: 130px 0 130px 0;
+  margin: 0;
+}
+.sec02_con .post_txt h3{
+  font-size: 1.25rem;
+}
+.sec02_con .post_txt p{
+  font-size: 1rem;
+}
+.sec02_con{
+  /* margin-top: 220px !important; */
+  flex-wrap: wrap;
+  justify-content: center !important;
+  height: inherit;
+}
+.sec02_con .slick-dots li{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  text-indent: -99999px;
+  margin: 20px 10px 10px 10px;
+}
+.sec02 .sec02_con .sec02_post01, .sec02_post02, .sec02_post03{
+  text-align: center;
+  width: 65% !important;
+  height: 40%;
+  margin-left: 17%;
+  margin-top: 60px;
+}
+
+/* section03 */
+.sec03{
+  /* display: none; */
+}
+  /* 섹션3 */
+  .sec03 .sec03_txt h2{
+    font-size: 1.875rem;
+  }
+  .sec03 .sec03_txt p{
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .sec02 .sec02_con h3{
+    margin-top: 40px;
+  }
+
+/* section04 */
+.sec04 .sec04_con_txt h3{
+  font-size: 1.25rem;
+}
+.sec04{
+  flex-direction: column;
+}
+.sec04_right{
+  margin: 0 auto;
+}
+.sec04_con{
+  flex-direction: column;
+  /* width: fit-content; */
+  margin: 60px auto 0 auto;
+  justify-content: start;
+}
+.sec04_con .con_wrap{
+  /* width: 84%; */
+  height: fit-content;
+}
+.sec04_con .con_wrap img{
+  /* width: fit-content; */
+}
+.sec04_con_txt p{
+  display: none;
+}
+.sec04_con .slick-dots{
+  margin: 0 auto;
+}
+.sec04_con .slick-dots li{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  text-indent: -99999px;
+  margin: 20px 10px 10px 10px;
+}
+
+
+}

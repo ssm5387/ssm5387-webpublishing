@@ -1,0 +1,95 @@
+/* header head-wrap*/
+#header { 
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: saturate(100%) blur(15px);
+}
+#header .gnb-wrap{
+    max-width: 1440px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .gnb-wrap .logo img{height: 40px;}
+header .menu ul {display: flex; justify-content: space-around;}
+
+header .menu ul { color: #333;}
+
+header .menu ul li{ padding: 0 40px; color: #999;}
+header .menu ul li:nth-child(3){ color: #333;}
+header .menu-btn {width: 30px; height: 30px; display: none;}
+header .menu ul li:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset : 5px;
+    text-decoration-thickness: 2px;
+}
+
+@media screen and (max-width: 960px){
+    header .menu-btn{ display: block;}
+    header .gnb-wrap .menu ul{display: none;}
+}
+
+/*fullpage 수정*/
+#fp-nav ul li .fp-tooltip {
+    top: -4px;
+    font-family: "Noto Sans KR";
+    color: #000;
+    font-size: 12px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: black;
+}
+footer .ft-wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+}
+
+footer .ft-left h2{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+footer .ft-right p{
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+}
+footer .ft-right p:last-child{
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+footer .ft-right select{
+    width: 230px;
+    height: 35px;
+    background: url(../img/btn_select.png) no-repeat;
+    background-position: -2px -5px;
+    font-size: 1rem;
+    padding-left: 20px;
+    appearance: none;
+}
+@media screen and (max-width: 960px){
+    footer .ft-wrap{
+        display: block;
+        text-align: center;
+        padding-bottom: 30px; 
+    }
+    footer .ft-wrap .ft-right{
+        margin-top: 20px;
+    }
+}

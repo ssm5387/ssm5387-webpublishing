@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/fav_ZD.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./js/script-sub.js"></script>
+    <title>직스앤닥스 | 리모델링 상담하기</title>
+</head>
+<body>
+    <header id="header">
+        <div class="gnb-wrap">
+          <div class="logo"><h1><a href="./index.html"><img src="./img/logo.png" alt=""></a></h1></div>
+          <div class="menu">
+              <ul>
+                <li><a href="#">견적서비스</a></li>
+                <li><a href="#">패키지</a></li>
+                <li><a href="./sub-01.html">자재</a></li>
+                <li><a href="#">포트폴리오</a></li>
+              </ul>
+          </div>
+        </div>
+    </header>
+
+    <section class="ad container">
+        <h2>리모델링 상담하기</h2>
+        <img src="./img/example.jpg" alt="" class="max-img">
+        <img src="./img/example_02.jpg" alt="" class="min-img">
+    </section>
+
+    <section class="remodel container">
+        <div class="table">
+            <div id="name" class="tr flex">
+                <div class="th"><label for="user-name">이름</label></div>
+                <div class="td"><input type="text" name="user-name" placeholder="이름" required></div>
+            </div>
+            <div id="main-address" class="tr flex">
+                <div class="th">
+                    <label for="address">주소</label>
+                </div>
+                <div class="td flex">
+                    <input type="text" name="user-name" placeholder="우편번호" required>
+                    <button>우편번호 검색</button>
+                </div>
+
+            </div>
+            <div id="sub-address" class="tr flex">
+              <div class="th"></div>
+              <div class="td">
+                <input type="text" name="user-name" placeholder="상세주소" required>
+              </div>
+            </div>
+            <div id="num" class="tr flex">
+                <div class="th"><label for="user-tel">연락처</label></div>
+                <div class="td flex">
+                  <select id="user-tel">
+                      <option>010</option>
+                      <option>011</option>
+                  </select>
+                <input type="tel" maxlength="8" placeholder="-없이 뒷자리를 입력해주세요."></div>
+            </div>
+            <div id="content" class="tr flex">
+                <div class="th"><label for="user-con">전달하고 싶은 말</label></div>
+                <div class="td"><textarea>궁금하신 내용을 남겨주세요.</textarea></div>
+            </div>
+        </div>
+        <div class="container submit">
+            <input type="submit" value="상담 신청하기">
+        </div>
+    </section>
+    <footer id="footer" class="section fp-auto-height">
+        <div class="ft-wrap">
+            <div class="ft-left">
+              <h2>직스엔닥스 인테리어</h2>
+              <p>대표이사 : 조영신</p>
+              <p>통신판매번호 : 2018-1320호</p>
+              <p>사업자등록번호 : 340-87-01169</p>
+            </div>
+            <div class="ft-middle">
+              <p>주소 : 서울시 강남구 선릉로 162길 3 5층</p>
+              <p>이메일 : contact@zixdacx.com</p>
+            </div>
+            <div class="ft-right">
+              <select>
+                <option selected>바로가기</option>
+                <optgroup label="파트너스">
+                  <option>전문가 모집</option>
+                  <option>협업 업체 모집</option>
+                </optgroup>
+
+                <optgroup label="회사 안내">
+                  <option>표준계약서</option>
+                  <option>시공안내문 다운로드</option>
+                  <option>개인정보 처리방침</option>
+                </optgroup>
+
+                <optgroup label="고객 지원">
+                  <option>공지사항</option>
+                  <option>자주 묻는 질문</option>
+                  <option>A/S정책</option>
+                  <option>환불 안내</option>
+                </optgroup>
+
+                <optgroup label="관련 사이트">
+                  <option>직닥 블로그</option>
+                  <option>직닥 인스타그램</option>
+                  <option>직닥 카카오톡</option>
+                </optgroup>
+
+              </select>
+              <p>copyrightⓒZix&Dacx. All rights reserved</p>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
