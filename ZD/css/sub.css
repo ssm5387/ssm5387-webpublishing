@@ -4,18 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-.gnb-semi button{
-    position: absolute; bottom: 15px; right: 15px;
-    width: 190px; height: 52px;
-    border-radius: 25px; border: none;
-    background-color: #333;
-    color: #fff; text-align: center; font-size: 1rem; font-weight: 500; font-family:'Noto Sans KR', sans-serif;
-    z-index: 99; cursor: pointer;
-    transition: all 0.5s;
-}
-.gnb-semi button:hover{
-    background-color: #666;
-}
 /* banner */
 .banner{
     width: 100%;
